@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block summary_type %} pdf {% endblock %}
+{% block content %}
+<form action="/pdf-summary" method="post" enctype="multipart/form-data">
+    
+<div class="input-group">
+    <input type="file" name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+    <button class="btn btn-light" type="submit" id="inputGroupFileAddon04">Generate Summary</button>
+</div>
+</form>
+{% endblock %}

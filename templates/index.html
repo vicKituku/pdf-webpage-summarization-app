@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block summary_type %} Webpage {% endblock %}
+{% block content %}
+<form action="/" method="post" enctype="multipart/form-data">
+    <div class="input-group mb-3">
+        <input type="text" name ="url" class="form-control" placeholder="Enter Url" aria-label="url" aria-describedby="button-addon2">
+        <button class="btn btn-light" type="submit" id="button-addon2">Generate Summary</button>
+    </div>
+    </form>
+{% endblock %}
